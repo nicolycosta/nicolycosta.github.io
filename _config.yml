@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Meu Site Legal"
+
+#title: "Nicoly Costa"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -27,7 +28,9 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: minimal-mistakes-jekyll
-
+plugins:
+  - jekyll-include-cache
+# Ativa a barra lateral
 sidebar:
   nav: "main"
   background: "/assets/images/imageBrain.jpg"  # Aqui pode pôr o fundo como o do Ítalo
@@ -39,7 +42,7 @@ sidebar:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: America/Sao_Paulo
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -58,23 +61,21 @@ include:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-include-cache # Ativa a barra lateral
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 author:
 
   name: "Nicoly Costa"
-  avatar: "/assets/images/eu.jpg" # coloque sua foto aqui
+  avatar: "/assets/images/seu-avatar.png" # coloque sua foto aqui
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Análise Espaço‑Temporal no python"
       icon: "fa-solid fa-location-dot"
-      url: "https://nicolycosta.github.io/curso/"
-    - label: "Análise Espaço‑Temporal no python"
       icon: "fa-solid fa-clock"
       url: "https://nicolycosta.github.io/curso/"
     - label: "Twitter"
@@ -125,4 +126,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
