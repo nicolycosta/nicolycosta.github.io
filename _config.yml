@@ -68,7 +68,7 @@ plugins:
 author:
 
   name: "Nicoly Costa"
-  avatar: "/assets/images/seu-avatar.png" # coloque sua foto aqui
+  avatar: "/assets/images/eu.jpg" # coloque sua foto aqui
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Análise Espaço‑Temporal no python"
