@@ -1,30 +1,9 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
+title: "Nicoly Costa"
 description: "Curso de Análise Espaço‑Temporal"
 url: "https://nicolycosta.github.io"
-baseurl: ""
+baseurl: "" # Não coloque barra no final
 
-
-#title: "Nicoly Costa"
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
@@ -33,33 +12,25 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
+# Configurações da barra lateral
 sidebar:
   nav: "main"
-  background: "/assets/images/imageBrain.jpg"  # Aqui pode pôr o fundo como o do Ítalo
   title: "Nicoly Costa"
-  avatar: "/assets/images/eu.jpg"          # Sua foto aqui
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  avatar: "/assets/images/eu.jpg"  # Certifique-se que essa imagem existe
 
+# Output
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: America/Sao_Paulo  # ou outro da sua preferência
+
+# Incluir arquivos extras
 include:
   - _pages
+  - assets/css/custom.css
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Plugins do Jekyll
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -68,21 +39,46 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
+# Configurar Sass
+sass:
+  style: compressed
 
+# Layout padrão para posts e páginas
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+  # Incluir CSS customizado
+  - scope:
+      path: ""
+    values:
+      custom_css:
+        - /assets/css/custom.css
+
+# Informações do autor
+author:
   name: "Nicoly Costa"
-  avatar: "/assets/images/eu.jpg" # coloque sua foto aqui
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar: "/assets/images/eu.jpg"
+  bio: "Minha biografia incrível em uma ou duas frases vai aqui."
   links:
-    - label: "Análise Espaço‑Temporal no python"
+    - label: "Análise Espaço‑Temporal no Python"
       icon: "fa-solid fa-location-dot"
       url: "https://nicolycosta.github.io/curso/"
-    - label: "Análise Espaço‑Temporal no python"
-      icon: "fa-solid fa-clock"
-      url: "https://nicolycosta.github.io/curso/"
-    - label: "Website"
-      icon: "fa-sharp fa-thin fa-calendar"
-      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
@@ -93,6 +89,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
 
+# Links do rodapé
 footer:
   links:
     - label: "Twitter"
@@ -105,52 +102,11 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
+# Arquivos de categorias e tags
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-
-
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: single
-
-plugins:
-  - jekyll-include-cache
-
-# Inclua seu CSS personalizado
-sass:
-  style: compressed
-
-include:
-  - assets/css/custom.css
-
-# Aponta para o CSS customizado
-minimal_mistakes_skin: default
 
