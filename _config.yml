@@ -132,10 +132,25 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# Adiciona CSS personalizado: imagem de fundo
+
+
 defaults:
   - scope:
       path: ""
+      type: "posts"
     values:
-      custom_css:
-        - /assets/css/custom.css
+      layout: single
+
+plugins:
+  - jekyll-include-cache
+
+# Inclua seu CSS personalizado
+sass:
+  style: compressed
+
+include:
+  - assets/css/custom.css
+
+# Aponta para o CSS customizado
+minimal_mistakes_skin: default
+
