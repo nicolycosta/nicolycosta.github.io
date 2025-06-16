@@ -131,3 +131,11 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Adiciona CSS personalizado: imagem de fundo
+defaults:
+  - scope:
+      path: ""
+    values:
+      custom_css:
+        - /assets/css/custom.css
