@@ -1,0 +1,6 @@
+/* Muda o fundo da sidebar */
+.sidebar {
+  background-image: url("/assets/images/imageBrain.jpg");
+  background-size: cover;
+  background-position: center;
+}
