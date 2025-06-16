@@ -14,13 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Nicoly Costa"
 description: "Curso de Análise Espaço‑Temporal"
 url: "https://nicolycosta.github.io"
 baseurl: ""
-
-
-
 
 
 #title: "Nicoly Costa"
