@@ -18,7 +18,7 @@ title: "Início"
 layout: single
 author_profile: true
 permalink: /
----
+
 
 Bem-vindo ao meu site! Aqui você encontra meu curso e outros conteúdos.
 email:
@@ -132,3 +132,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+---
