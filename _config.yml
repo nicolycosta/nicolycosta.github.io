@@ -13,7 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Nicoly Costa"
+---
+title: "Início"
+layout: single
+author_profile: true
+permalink: /
+---
+
+Bem-vindo ao meu site! Aqui você encontra meu curso e outros conteúdos.
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
