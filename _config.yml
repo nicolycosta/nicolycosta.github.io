@@ -37,6 +37,11 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+sidebar:
+  nav: "main"
+  background: "/assets/images/imageBrain.jpg"  # Aqui pode pôr o fundo como o do Ítalo
+  title: "Nicoly Costa"
+  avatar: "/assets/images/eu.jpg"          # Sua foto aqui
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -70,11 +75,15 @@ plugins:
 author:
 
   name: "Nicoly Costa"
-  avatar: "/assets/images/seu-avatar.png" # coloque sua foto aqui
+  avatar: "/assets/images/eu.png" # coloque sua foto aqui
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Análise Espaço‑Temporal no python"
-    
+      icon: "fa-solid fa-location-dot"
+      url: "https://nicolycosta.github.io/curso/"
+    - label: "Análise Espaço‑Temporal no python"
+      icon: "fa-solid fa-clock"
+      url: "https://nicolycosta.github.io/curso/"
     - label: "Website"
       icon: "fa-sharp fa-thin fa-calendar"
       url: "https://"
