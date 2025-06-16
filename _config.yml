@@ -74,10 +74,9 @@ author:
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Análise Espaço‑Temporal no python"
-    
-    - label: "Website"
-      icon: "fa-sharp fa-thin fa-calendar"
-      url: "https://"
+        icon: "fa-solid fa-location-dot"
+        icon: "fa-solid fa-clock"
+        url: "https://nicolycosta.github.io/curso/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
