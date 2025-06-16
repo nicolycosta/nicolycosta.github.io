@@ -64,7 +64,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-include-cache
 
 author:
 
@@ -74,6 +73,8 @@ author:
   links:
     - label: "Análise Espaço‑Temporal no python"
       icon: "fa-solid fa-location-dot"
+      url: "https://nicolycosta.github.io/curso/"
+    - label: "Análise Espaço‑Temporal no python"
       icon: "fa-solid fa-clock"
       url: "https://nicolycosta.github.io/curso/"
     - label: "Twitter"
