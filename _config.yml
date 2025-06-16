@@ -33,9 +33,9 @@ plugins:
 # Ativa a barra lateral
 sidebar:
   nav: "main"
-  background: "/assets/images/sidebar-bg.jpg"  # Aqui pode pôr o fundo como o do Ítalo
+  background: "/assets/images/imageBrain.jpg"  # Aqui pode pôr o fundo como o do Ítalo
   title: "Nicoly Costa"
-  avatar: "/assets/images/nicoly.jpg"          # Sua foto aqui
+  avatar: "/assets/images/eu.jpg"          # Sua foto aqui
 
 
 # Outputting
