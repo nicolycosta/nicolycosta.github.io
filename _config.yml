@@ -35,7 +35,7 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 sidebar:
   nav: "main"
-  background: "/assets/images/Lucid_Realism_A_futuristic_hightech_illustration_depicting_the_3.jpg"  # Aqui pode pôr o fundo como o do Ítalo
+  background: "/assets/images/imageBrain.jpg"  # Aqui pode pôr o fundo como o do Ítalo
   title: "Nicoly Costa"
   avatar: "/assets/images/eu.jpg"          # Sua foto aqui
 # Outputting
@@ -71,7 +71,7 @@ plugins:
 author:
 
   name: "Nicoly Costa"
-  avatar: "/assets/images/eu.png" # coloque sua foto aqui
+  avatar: "/assets/images/eu.jpg" # coloque sua foto aqui
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Análise Espaço‑Temporal no python"
