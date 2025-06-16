@@ -37,7 +37,7 @@ sidebar:
   nav: "main"
   background: "/assets/images/Lucid_Realism_A_futuristic_hightech_illustration_depicting_the_3.jpg"  # Aqui pode pôr o fundo como o do Ítalo
   title: "Nicoly Costa"
-  avatar: "/assets/images/eu.jpeg"          # Sua foto aqui
+  avatar: "/assets/images/eu.jpg"          # Sua foto aqui
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
