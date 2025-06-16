@@ -28,6 +28,15 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-include-cache
+# Ativa a barra lateral
+sidebar:
+  nav: "main"
+  background: "/assets/images/sidebar-bg.jpg"  # Aqui pode pôr o fundo como o do Ítalo
+  title: "Nicoly Costa"
+  avatar: "/assets/images/nicoly.jpg"          # Sua foto aqui
+
 
 # Outputting
 permalink: /:categories/:title/
