@@ -1,14 +1,29 @@
 /* Para a barra lateral */
 .sidebar {
-  background-image: url('/assets/images/imageBrain.jpg'); /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Faz a imagem cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-image: url('/assets/images/imagem_brain.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Opcional: ajustar a cor do texto para melhor contraste */
+/* Ajustar a cor do texto para melhor contraste e tornar fundos transparentes */
 .sidebar .author__content,
 .sidebar .nav__list,
-.sidebar .social-icons {
+.sidebar .social-icons,
+.sidebar .author__urls-wrapper { /* Adicionei .author__urls-wrapper */
+  background-color: transparent; /* Torna o fundo transparente */
   color: #fff; /* Exemplo: texto branco */
+}
+
+/* Pode ser necessário para a bio e links */
+.sidebar .author__bio,
+.sidebar .author__urls {
+  background-color: transparent; /* Garante que a bio e os links também fiquem transparentes */
+}
+
+/* Opcional: Remover qualquer padding extra que possa esconder o fundo */
+/* Isso pode variar, dependendo da versão exata do tema e de outros CSS */
+.sidebar .sidebar__inner {
+    padding-top: 0;
+    padding-bottom: 0;
 }
