@@ -1,6 +1,14 @@
-/* Muda o fundo da sidebar */
+/* Para a barra lateral */
 .sidebar {
-  background-image: url("/assets/images/imageBrain.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url('/assets/images/imageBrain.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+/* Opcional: ajustar a cor do texto para melhor contraste */
+.sidebar .author__content,
+.sidebar .nav__list,
+.sidebar .social-icons {
+  color: #fff; /* Exemplo: texto branco */
 }
