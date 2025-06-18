@@ -1,5 +1,3 @@
-
-        
 title: "Nicoly Costa"
 description: "Curso de Análise Espaço‑Temporal"
 url: "https://nicolycosta.github.io"
@@ -65,7 +63,12 @@ defaults:
       layout: single
       author_profile: true
 
-
+  # Incluir CSS customizado
+  - scope:
+      path: ""
+    values:
+      custom_css:
+        - /assets/css/custom.css
 
 # Informações do autor
 author:
@@ -106,10 +109,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-  # Incluir CSS customizado
-- scope:
-    path: ""
-  values:
-    custom_css:
-      - /assets/css/custom.css
