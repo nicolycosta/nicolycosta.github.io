@@ -1,29 +1,48 @@
 /* Para a barra lateral */
 .sidebar {
-  background-image: url('/assets/images/imagem_brain.jpg');
+  background-image: url('/assets/images/imagem_brain.jpg'); /* Verifique o caminho da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* Opcional: Adicione um filtro escurecedor se a imagem for muito clara */
+  /* filter: brightness(70%); */
 }
 
-/* Ajustar a cor do texto para melhor contraste e tornar fundos transparentes */
+/* Tornar todos os elementos dentro da barra lateral transparentes */
+.sidebar .sidebar__inner,
 .sidebar .author__content,
-.sidebar .nav__list,
-.sidebar .social-icons,
-.sidebar .author__urls-wrapper { /* Adicionei .author__urls-wrapper */
-  background-color: transparent; /* Torna o fundo transparente */
-  color: #fff; /* Exemplo: texto branco */
-}
-
-/* Pode ser necessário para a bio e links */
+.sidebar .author__avatar,
 .sidebar .author__bio,
-.sidebar .author__urls {
-  background-color: transparent; /* Garante que a bio e os links também fiquem transparentes */
+.sidebar .author__urls-wrapper,
+.sidebar .nav__list,
+.sidebar .nav__list-item,
+.sidebar .social-icons,
+.sidebar .widget,
+.sidebar .widget--sidebar,
+.sidebar .widget--author {
+  background-color: transparent !important; /* !important garante que sobrescreva outras regras */
+  box-shadow: none !important; /* Remover sombras que podem adicionar opacidade */
+  border: none !important; /* Remover bordas que podem ter cor de fundo */
 }
 
-/* Opcional: Remover qualquer padding extra que possa esconder o fundo */
-/* Isso pode variar, dependendo da versão exata do tema e de outros CSS */
-.sidebar .sidebar__inner {
-    padding-top: 0;
-    padding-bottom: 0;
+/* Ajustar a cor do texto para melhor contraste */
+.sidebar .author__content,
+.sidebar .nav__list a, /* Para links de navegação */
+.sidebar .nav__list-item,
+.sidebar .sidebar__title,
+.sidebar .author__bio,
+.sidebar .author__urls,
+.sidebar .social-icons a { /* Para links de ícones sociais */
+  color: #fff !important; /* Texto branco */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Adiciona uma sombra ao texto para melhorar a leitura */
+}
+
+/* Garante que a imagem de perfil não tenha um fundo branco */
+.author__avatar img {
+  background-color: transparent !important;
+}
+
+/* Se houver algum fundo no próprio avatar container */
+.author__avatar {
+  background-color: transparent !important;
 }
