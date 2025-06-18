@@ -16,7 +16,7 @@ remote_theme: mmistakes/minimal-mistakes
 # Configurações da barra lateral
 sidebar:
   nav: "main"
-  title: "Nicoly Costa"
+  #title: "Nicoly Costa"
   avatar: "/assets/images/eu.jpg"  # Certifique-se que essa imagem existe
 
 # Output
