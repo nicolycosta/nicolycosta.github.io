@@ -1,9 +1,4 @@
-  # Incluir CSS customizado
-- scope:
-    path: ""
-  values:
-    custom_css:
-      - /assets/css/custom.css
+
         
 title: "Nicoly Costa"
 description: "Curso de Análise Espaço‑Temporal"
@@ -112,3 +107,9 @@ tag_archive:
   type: liquid
   path: /tags/
 
+  # Incluir CSS customizado
+- scope:
+    path: ""
+  values:
+    custom_css:
+      - /assets/css/custom.css
